@@ -1,0 +1,78 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main or Global-all-common styling */
+
+html, body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em; /* 1 em in google chrom is 16 px --> mainly used for responsive design */
+}
+
+a {
+    text-decoration: none; /* Removing the default underline */
+    color: #333
+}
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Utility Classes */
+
+.container {
+    margin: auto;
+    max-width: 800px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+/* Navbar Styling */
+
+#navbar {
+    background: #333;
+    color: #fff;
+    overflow: auto; /* Comment and see what error it shows up. I don't understand this quite clearly yet */
+}
+
+#navbar a {
+    color: #fff;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+    /* padding-left: 20px; */
+}
+
+#navbar ul {
+    list-style: none; /* Removing the bullets from the bullet points :v lol */
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+    /* padding: 20px; */
+    /* display: block; */
+}
+
+/* Since the anchor tag is an inline element, therefore, pading cannot be applied to it */
+/* In order to do so, we need to make the anchor tag into a block element */
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover {
+    background: #444;
+    color: #f7c08a;
+}
