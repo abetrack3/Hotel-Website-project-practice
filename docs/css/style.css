@@ -40,6 +40,10 @@ p {
     clear: both;
 }
 
+#primary-text-color {
+    color: #f7c08a;
+}
+
 /* Navbar Styling */
 
 #navbar {
@@ -84,10 +88,6 @@ p {
 
 /* Showcase Styling */
 
-#enjoy {
-    color: #f7c08a;
-}
-
 #showcase-container {
     text-align: center;
     background: #333 url("../img/showcase.jpg") no-repeat center/cover;
@@ -118,4 +118,41 @@ p {
 #showcase-container p{
     font-size: 20px;
     margin: 40px 0;
+}
+
+/* History Styling */
+
+.home-photo, .home-detail {
+    width: 50%;
+    height: 400px;
+}
+
+.home-photo{
+    background: #333 url("../img/photo-1.jpg") no-repeat center/cover;
+    float: left;
+    
+}
+
+.home-detail {
+    float: right;
+    text-align: center;
+    padding: 8% 2%;
+    background: #333;
+    color: #fff;
+}
+
+.home-detail a {
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    padding: 13px 20px;
+    font-size: 18px;
+    border-style:double;
+    border-color: #333;
+    border-width: 5px;
+    border-radius:10px;
+}
+
+.home-detail a:hover {
+    background: #f7c08a;
 }
