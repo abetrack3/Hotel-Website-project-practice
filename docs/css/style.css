@@ -120,7 +120,7 @@ p {
     margin: 40px 0;
 }
 
-/* History Styling */
+/* Home-Info Styling */
 
 .home-photo, .home-detail {
     width: 50%;
@@ -155,4 +155,37 @@ p {
 
 .home-detail a:hover {
     background: #f7c08a;
+}
+
+/* Feature Section Styling */
+
+.box{
+    float: left;
+    width:33.33%;
+    text-align: center;
+    background: #f7c08a;
+    padding: 2% 2%;
+}
+
+.box h3 {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.box.bg-light { 
+    background: #fff;
+}
+
+/* Footer Styling */
+
+#main-footer {
+    text-align: center;
+    color: #fff;
+    background: #333;
+    height: 70px;
+}
+
+#main-footer p {
+    padding: 20px;
+    margin: 0 auto;
 }
