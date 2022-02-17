@@ -24,6 +24,7 @@ h1, h2, h3 {
 
 p {
     margin: 10px 0;
+    padding-bottom: 20px;
 }
 
 /* Utility Classes */
@@ -33,6 +34,10 @@ p {
     max-width: 800px;
     overflow: auto;
     padding: 0 20px;
+}
+
+.clr {
+    clear: both;
 }
 
 /* Navbar Styling */
@@ -72,7 +77,45 @@ p {
     text-align: center;
 }
 
-#navbar ul li a:hover {
+#navbar ul li a:hover, #navbar ul li a.current{
     background: #444;
     color: #f7c08a;
+}
+
+/* Showcase Styling */
+
+#enjoy {
+    color: #f7c08a;
+}
+
+#showcase-container {
+    text-align: center;
+    background: #333 url("../img/showcase.jpg") no-repeat center/cover;
+    color: #fff;
+    margin:auto;
+    overflow: hidden;
+    height: 600px;
+    padding: 15% 0;
+}
+
+#showcase-container a {
+    /* display: block; */
+    background: #333;
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+#showcase-container a:hover {
+    background: #444;
+    color: #f7c08a;
+}
+
+#showcase-container h1{
+    font-size: 60px;
+}
+
+#showcase-container p{
+    font-size: 20px;
+    margin: 40px 0;
 }
