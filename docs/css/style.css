@@ -14,8 +14,8 @@ html, body {
 }
 
 a {
-    text-decoration: none; /* Removing the default underline */
     color: #333;
+    text-decoration: none; /* Removing the default underline */
 }
 
 h1, h2, h3 {
@@ -24,7 +24,7 @@ h1, h2, h3 {
 
 p {
     margin: 10px 0;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 /* Utility Classes */
@@ -36,12 +36,28 @@ p {
     padding: 0 20px;
 }
 
-.clr {
-    clear: both;
-}
-
 #primary-text-color {
     color: #f7c08a;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f7c08a;
+    color: #333;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
 }
 
 .bg-light {
@@ -54,6 +70,16 @@ p {
     color: #333;
 }
 
+.clr {
+    clear: both;
+}
+
+.l-heading {
+    font-size: 40px;
+}  
+
+/* Padding */
+
 .py-1 {
     padding: 10px 0;
 }
@@ -63,11 +89,6 @@ p {
 .py-3 {
     padding: 30px 0;
 }
-
-.l-heading {
-    font-size: 40px;
-}
-  
 
 /* Navbar Styling */
 
@@ -106,7 +127,8 @@ p {
     text-align: center;
 }
 
-#navbar ul li a:hover, #navbar ul li a.current{
+#navbar ul li a:hover,
+#navbar ul li a.current{
     background: #444;
     color: #f7c08a;
 }
@@ -161,21 +183,13 @@ p {
 .home-detail {
     float: right;
     text-align: center;
-    padding: 8% 2%;
+    padding: 50px 30px;
     background: #333;
     color: #fff;
+    overflow: hidden;
 }
-
-.home-detail a {
-    display: inline-block;
-    background: #fff;
-    color: #333;
-    padding: 13px 20px;
-    font-size: 18px;
-    border-style:double;
-    border-color: #333;
-    border-width: 5px;
-    border-radius:10px;
+.home-detail p {
+    padding-bottom: 30px;
 }
 
 .home-detail a:hover {
@@ -188,17 +202,11 @@ p {
     float: left;
     width:33.33%;
     text-align: center;
-    background: #f7c08a;
-    padding: 2% 2%;
+    padding: 50px;
 }
 
-.box h3 {
-    padding-top: 20px;
-    padding-bottom: 0;
-}
-
-.box.bg-light { 
-    background: #fff;
+.box i {
+    margin-bottom: 10px;
 }
 
 /* About-Info Styling */
@@ -251,6 +259,61 @@ p {
     margin-right: 20px;
     border-radius: 50%;
 }
+
+/* Contact Form Styling  */
+
+#contact-form {
+    padding: 30px 0;
+}
+  
+#contact-form .form-input {
+    margin-bottom: 20px;
+}
+  
+#contact-form label {
+    margin-bottom: 5px;
+    display: block;
+}
+  
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(221, 221, 221);
+}
+  
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border: 1px solid #f7c08a;
+    outline: none;
+}
+  
+#contact-form textarea {
+    height: 200px;
+    width: 80%;
+}
+  
+/* Contact Info Styling */
+  
+#contact-info {
+    color: #fff;
+    background: #333;
+    text-align: center;
+}
+  
+#contact-info .contact-details {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+  
+#contact-info .contact-details h3 {
+    padding-bottom: 20px;
+}
+  
+#contact-info .contact-details i {
+    margin-bottom: 10px;
+}
   
 
 /* Footer Styling */
@@ -258,11 +321,12 @@ p {
 #main-footer {
     text-align: center;
     color: #fff;
-    background: #333;
-    height: 70px;
+    background: #444;
+    /* height: 70px; */
+    padding: 20px;
 }
 
-#main-footer p {
-    padding: 20px;
+/* #main-footer p {
+    
     margin: 0 auto;
-}
+} */
